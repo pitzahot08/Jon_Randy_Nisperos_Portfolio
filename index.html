@@ -1,52 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website HTML CSS Only</title>
+    <title>Jon Randy M. Nisperos | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="logo">Randy.</a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="container">
+            <div class="logo">JRN<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Jon Randy Nisperos</h1>
-            <h3>Parang Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore magni sunt fuga blanditiis facere earum, nihil fugit voluptate recusandae, perferendis totam porro accusantium adipisci ipsam eligendi quam hic! Dolorum.</p>
-            <div class="btn-box">
-                <a href="#" >Hire Me</a>
-                <a href="#" >Let's Talk</a>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Jon Randy M. Nisperos</h1>
+            <h2>IT Professional & Technical Instructor</h2>
+            <p>Versatile Information Technology professional with a proven track record in web administration, campus-wide network infrastructure, and logistics data systems.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                <a href="#experience" class="btn secondary-btn">View Work</a>
             </div>
         </div>
-
-        <div class="home-sci">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/jon-randy-nisperos-095866167/"><i class="bx bxl-linkedin"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-        </div>
-
-        <span class="home-imgHover"></span>
-
-
     </section>
 
+    <!-- About / Summary Section -->
+    <section id="about" class="container">
+        <div class="section-title">
+            <h3>About Me</h3>
+            <div class="line"></div>
+        </div>
+        <div class="about-box">
+            <p>Experienced in managing complex institutional databases, optimizing network connectivity, and handling high-volume inventory operations. Demonstrated commitment to continuous professional development in web hosting and cybersecurity essentials.</p>
+        </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h3>Work Experience</h3>
+                <div class="line"></div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>Warehouse Administrator</h4>
+                        <p class="company">New Sky Forwarders Philippines Logistics</p>
+                        <p class="date">2025 - 2026</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Managed comprehensive warehouse inventory systems, tracking daily sales data and operational expenses.</li>
+                            <li>Coordinated client supply chains by efficiently booking, tracking, and managing critical deliveries and pick-ups.</li>
+                            <li>Audited incoming and outgoing cargo to verify package accuracy against order specifications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>Web Administrator</h4>
+                        <p class="company">Core Gateway College, Inc.</p>
+                        <p class="date">2022 - 2024</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Oversaw continuous maintenance, optimization, and migration workflows for legacy and modern School Management Systems.</li>
+                            <li>Administered the CGCI-IJAMET Online Journal website, ensuring security patches, hosting uptime, and content availability.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>Network Administrator</h4>
+                        <p class="company">Core Gateway College, Inc.</p>
+                        <p class="date">2017 - 2023</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Configured and managed campus-wide network infrastructure, ensuring seamless, high-speed connectivity across departments.</li>
+                            <li>Maintained hardware and routing connections across administrative offices, reducing downtime via proactive troubleshooting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>Part-time Instructor</h4>
+                        <p class="company">Core Gateway College, Inc.</p>
+                        <p class="date">2018 - 2023</p>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Conducted practical technical laboratory sessions and evaluated student program projects and assignments.</li>
+                            <li>Collaborated with faculty to refine curriculum standards and engaged heavily in academic seminars.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Training Section -->
+    <section id="certifications" class="container">
+        <div class="section-title">
+            <h3>Development & Certifications</h3>
+            <div class="line"></div>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fa-solid fa-shield-halved card-icon"></i>
+                <h4>Cybersecurity</h4>
+                <ul>
+                    <li>Cybersecurity Essentials Bootcamp – Informatics (2026)</li>
+                    <li>Basic Cybersecurity Seminar – The Fence Defense (2026)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-server card-icon"></i>
+                <h4>Infrastructure & Data</h4>
+                <ul>
+                    <li>PHEI Web Hosting Services & DNS Training – DICT (2021)</li>
+                    <li>Higher Education Data Elements Collection – Subic Bay (2018)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-video card-icon"></i>
+                <h4>Media & Multimedia</h4>
+                <ul>
+                    <li>Introduction to After Effects – DICT (2022)</li>
+                    <li>Creating Instructional Videos & Distance Learning – DICT (2022)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & References Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h3>Contact & References</h3>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h4>Let's Connect</h4>
+                    <p><i class="fa-solid fa-envelope"></i> jrandynisperos@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0954-107-6865</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Talavera, Nueva Ecija</p>
+                    <div class="social-links">
+                        <a href="https://linkedin/jrandynisperos" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://linktr.ee/jrandynisperos" target="_blank"><i class="fa-solid fa-tree"></i></a>
+                    </div>
+                </div>
+                <div class="references-info">
+                    <h4>References Available</h4>
+                    <div class="ref-grid">
+                        <div>
+                            <h5>Angelita Macam</h5>
+                            <p class="ref-title">CGCI Alumni Relations Officer</p>
+                            <p>0945 500 2913</p>
+                        </div>
+                        <div>
+                            <h5>Apple Grace Tacmo</h5>
+                            <p class="ref-title">Human Resource - Admin</p>
+                            <p>0955 759 8635</p>
+                        </div>
+                        <div>
+                            <h5>Hazel Sambrano</h5>
+                            <p class="ref-title">New Sky Express Forwarders</p>
+                            <p>0906 843 7418</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jon Randy M. Nisperos. All Rights Reserved.</p>
+    </footer>
 
 </body>
-
 </html>
-
-<!-- https://codehalweb.com/responsive-portfolio-website/ -->
